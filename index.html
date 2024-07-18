@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Acosta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        body {
+            background-color: #f8f9fa; 
+            color: #212529; 
+        }
+        .navbar, .footer {
+            background-color: white; 
+            color: black;
+            margin-right: 2px;
+        }
+        .navbar-brand, .nav-link, .footer-text {
+            color: black !important;
+            font-weight: 520;
+        }
+        .jumbotron {
+            background-image: url('./img/banner.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 0;
+        }
+        .section-title {
+            color: #212529;
+            text-align: center; 
+            margin-bottom: 50px; 
+        }
+        .profile-pic {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 50px;
+        }
+        .main-content {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .profile-text {
+            flex: 1;
+        }
+        .footer {
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombreado gris */
+        }
+        .navbar-toggler {
+            border-color: rgba(0, 0, 0, 0.1); /* Color del borde del botón */
+        }
+
+        /* Estilo para centrar la sección de servicios */
+        #servicios {
+            text-align: center;
+        }
+
+
+        #servicios ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        #servicios li {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./img/sinfondo.png" alt="Logo de Gabriel Acosta" height="30">
+            </a>
+
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quien-soy">Mi perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactame">Contáctame</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner con imagen de fondo -->
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--<h1>Bienvenido a la página de Gabriel Acosta</h1>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container main-content mt-5">
+        <section id="quien-soy" class="my-5">
+            <h1 class="section-title">Bienvenidos a mi perfil</h1>
+            <div class="d-flex flex-column flex-md-row align-items-center">
+                <p class="profile-text">
+                    ¡Hola! Soy Gabriel Acosta, un psicólogo especializado en Gestión de Talento en Argentina. Mi enfoque se centra en conectar personas con empresas, creando equipos sólidos y efectivos que impulsen el éxito organizacional.
+                    <br><br>
+                    <strong>Para Empresas</strong>
+                    <br>
+                    Ofrezco servicios personalizados de reclutamiento y selección diseñados para encontrar el talento ideal que se alinee con la cultura y objetivos de tu empresa. Desde pequeñas empresas hasta grandes corporaciones, mi objetivo es optimizar tus procesos de Gestión de Talento para maximizar el rendimiento y la satisfacción laboral.
+                    <br><br>
+                    <strong>Para Talentos</strong>
+                    <br>
+                    Si eres un profesional en busca de crecimiento o nuevas oportunidades en el dinámico mercado argentino, estoy aquí para apoyarte. Ofrezco asesoramiento personalizado, desarrollo de habilidades y coaching para ayudarte a alcanzar tus metas profesionales con confianza y éxito.
+                    <br><br>
+                    ¿Listo para comenzar juntos?
+                    <br>
+                    Ya sea que necesites fortalecer tu equipo o estés listo para dar un salto en tu carrera profesional, estoy aquí para ayudarte a alcanzar tus metas en Gestión de Talento. <strong>¡Contáctame hoy mismo y juntos construiremos el camino hacia el éxito laboral que buscas!</strong>
+                </p>
+                <img src="./img/perfil3.jpg" alt="Gabriel Acosta" class="profile-pic mt-3 mt-md-0 ms-md-3">
+            </div>
+        </section>
+
+        <section id="servicios" class="my-5">
+            <h3 class="section-title">Mis servicios</h3>
+            <p>
+                En mi práctica, ofrezco una variedad de servicios diseñados para fortalecer equipos y apoyar el crecimiento profesional
+            </p>
+            <ul>
+                <li><strong>Armado de CV:</strong> Destaca tu experiencia y habilidades con un currículum impactante que resalte tu potencial ante empleadores.</li>
+                <li><strong>Asesoramiento Profesional:</strong> Recibe guía personalizada para el desarrollo de habilidades y estrategias que te permitirán avanzar en tu carrera.</li>
+                <li><strong>Selección de Personal:</strong> Encuentra el talento ideal para tu empresa, asegurando un ajuste perfecto con la cultura y necesidades organizacionales.</li>
+                <li><strong>Desarrollo Organizacional:</strong> Implementa cambios estratégicos que mejoren la eficiencia y el ambiente de trabajo en tu organización.</li>
+                <li><strong>Orientación Laboral:</strong> Obtén apoyo en la búsqueda de empleo y estrategias efectivas para potenciar tu trayectoria profesional.</li>
+            </ul>
+            <p>
+                ¡Transforma tu carrera y tu organización con mis servicios! <strong>Contáctame hoy mismo y juntos construiremos el camino hacia el éxito que buscas.</strong>
+            </p>
+        </section>
+
+        <section id="contactame" class="my-5">
+            <h3 class="section-title">Contáctame</h3>
+            <p>Correo electrónico: <strong>contacto@gabrielacosta.com</strong></p>
+            <p>Teléfono: <strong>+54 9 11 1234 5678</strong></p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <div class="social-icons" style="margin-bottom: 10px;">
+                <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <span style="margin: 0 10px;"></span> <!-- Espacio entre los iconos -->
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+            </div>
+            <span class="footer-text" style="font-size: 0.8em;">&copy; 2024 Romina Herera.</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
